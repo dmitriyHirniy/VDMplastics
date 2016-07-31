@@ -18,6 +18,7 @@ import {KetronPeekComponent} from "../products/engineering-plastic/ketron-peek.c
 import {Celazole_PBIComponent} from "../products/engineering-plastic/Celazole_PBI.component";
 import {LavsanComponent} from "../products/engineering-plastic/lavsan.component";
 import {PneumaticsComponent} from "../sections/pneumatics.component";
+import {PolypropyleneProductsComponent} from "../sections/polypropylene-products.component";
 
 export const routes: RouterConfig = [
     {
@@ -26,6 +27,9 @@ export const routes: RouterConfig = [
             {path: '', component: RootPageComponent},
             {path: 'Pneumatics', children: [
                 {path: '', component: PneumaticsComponent},
+            ]},
+            {path: 'PolypropyleneProducts' , children: [
+                {path: '', component: PolypropyleneProductsComponent},
             ]},
             {path: 'Engineering-plastic',
                 children: [
