@@ -17,12 +17,16 @@ import {PolyethyleneComponent} from "../products/engineering-plastic/polyethylen
 import {KetronPeekComponent} from "../products/engineering-plastic/ketron-peek.component";
 import {Celazole_PBIComponent} from "../products/engineering-plastic/Celazole_PBI.component";
 import {LavsanComponent} from "../products/engineering-plastic/lavsan.component";
+import {PneumaticsComponent} from "../sections/pneumatics.component";
 
 export const routes: RouterConfig = [
     {
         path: '',
         children: [
             {path: '', component: RootPageComponent},
+            {path: 'Pneumatics', children: [
+                {path: '', component: PneumaticsComponent},
+            ]},
             {path: 'Engineering-plastic',
                 children: [
                     {path: '' , component:EngineeringPlasticComponent },
