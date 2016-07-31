@@ -6,7 +6,7 @@
             <!-- Table -->
             <table class="table table-striped">
                 <caption>
-                    <h4><strong>Поликарбонат пруток</strong></h4>
+                    <h4><strong><span class="glyphicon glyphicon-credit-card"></span> Поликарбонат пруток</strong></h4>
                 </caption>
                 <thead>
                 <tr>
@@ -17,7 +17,7 @@
                 </thead>
                 <tbody>
                 <tr *ngFor="let data of production">
-                    <td class="noBoldFontWeight">{{data.title}}</td>
+                    <td class="noBoldFontWeight" style="font-size: 0.8em">{{data.title}}</td>
                     <td>{{data.price}}</td>
                     <td>{{data.weight}}</td>
                 </tr>
@@ -28,26 +28,26 @@
 
     <div class="container">
         <div class="bs-callout bs-callout-info">
-            <h4>PC – Lexan (Поликарбонат)</h4>
+            <h4><span class="glyphicon glyphicon-question-sign"></span> PC – Lexan (Поликарбонат)</h4>
             <p>Поликарбонат. Этот аморфный полимер обычно используется в связи с его высокой ударопрочностью, в том числе при
                 низких температурах. Этот материал не рекомендуется для использования в механике, даже если формоустойчивость
                 делает его подходящим для изготовления точных деталей.</p>
         </div>
 
         <div class="bs-callout bs-callout-info">
-            <h4>СВОЙСТВА</h4>
+            <h4><span class="glyphicon glyphicon-question-sign"></span> СВОЙСТВА</h4>
             <p>Превосходная ударопрочность. Диэлектрические свойства. Стабильность размеров.
                 Цвет: светлый</p>
         </div>
 
         <div class="bs-callout bs-callout-info">
-            <h4>НЕДОСТАТКИ</h4>
+            <h4><span class="glyphicon glyphicon-question-sign"></span> НЕДОСТАТКИ</h4>
             <p>Данный материал не обладает самосмазывающейся способностью, он разрушается под действием масел и консистентных смазок,
                 поэтому он не может считаться подходящим для смазывающихся движущих механических деталей.</p>
         </div>
 
         <div class="bs-callout bs-callout-info">
-            <h4>ПРИМЕНЕНИЕ</h4>
+            <h4><span class="glyphicon glyphicon-question-sign"></span> ПРИМЕНЕНИЕ</h4>
             <p>Использование в электротехнике: хорошие диэлектрические свойства. Он используется главным образом в этой области.
                 Использование в химии: использование PC в химической промышленности не является идеальным вариантом в связи с плохой сопротивляемостью углеводородам. </p>
             <p>Использование в контакте с пищевыми продуктами: физиологически инертный, если натуральный.</p>
@@ -62,13 +62,13 @@
             <!-- Table -->
             <table class="table table-striped">
                 <caption>
-                    <h4><strong>Свойства</strong></h4>
+                    <h4><strong><span class="glyphicon glyphicon-list-alt"></span> Свойства</strong></h4>
                 </caption>
                 <thead>
                 <tr>
-                    <th>Плотность (г/см3 )</th>
-                    <th>Абсорбция Воды в воздухе 50% о.в.(%)</th>
-                    <th>Абсорбция 23ºС в насыщенном водном растворе(%)</th>
+                    <th class="th1">Плотность (г/см3 )</th>
+                    <th class="th1">Абсорбция Воды в воздухе 50% о.в.(%)</th>
+                    <th class="th1">Абсорбция 23ºС в насыщенном водном растворе(%)</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -89,7 +89,7 @@
             <!-- Table -->
             <table class="table table-striped">
                 <caption>
-                    <h4><strong>Механические свойства</strong></h4>
+                    <h4><strong><span class="glyphicon glyphicon-list-alt"></span> Механические свойства</strong></h4>
                 </caption>
                 <thead>
                 <tr>
@@ -112,11 +112,11 @@
             <!-- Table -->
             <table class="table table-striped">
                 <caption>
-                    <h4><strong>Термосвойства</strong></h4>
+                    <h4><strong><span class="glyphicon glyphicon-list-alt"></span> Термосвойства</strong></h4>
                 </caption>
                 <thead>
                 <tr>
-                    <th *ngFor="let title of thermalPropertiesTitle">{{title}}</th>
+                    <th class="th1" *ngFor="let title of thermalPropertiesTitle">{{title}}</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -135,11 +135,11 @@
             <!-- Table -->
             <table class="table table-striped">
                 <caption>
-                    <h4><strong>Электрические свойства</strong></h4>
+                    <h4><strong><span class="glyphicon glyphicon-list-alt"></span> Электрические свойства</strong></h4>
                 </caption>
                 <thead>
                 <tr>
-                    <th *ngFor="let title of electricPropertiesTitle">{{title}}</th>
+                    <th class="th1" *ngFor="let title of electricPropertiesTitle">{{title}}</th>
                 </tr>
                 </thead>
                 <tbody>

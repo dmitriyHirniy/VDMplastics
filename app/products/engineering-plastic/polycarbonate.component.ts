@@ -17,7 +17,8 @@ class ProductTable{
 
 @Component({
     selector: 'polycarbonate-component',
-    templateUrl: 'app/html/products/engineering-plastic/polycarbonate.component.html'
+    templateUrl: 'app/html/products/engineering-plastic/polycarbonate.component.html',
+    styleUrls: ['app/styles/polycarbonate.component.css']
 })
 
 export class PolycarbonateComponent implements OnInit{
@@ -82,7 +83,8 @@ export class PolycarbonateComponent implements OnInit{
         this.thermalPropertiesData = [
             "135",
             "-50",
-            "HB V2",
+            "HB",
+            "V2",
             "25"
         ];
 
@@ -94,7 +96,7 @@ export class PolycarbonateComponent implements OnInit{
         ];
 
         this.electricPropertiesData = [
-            "3","30","1016","0,01"
+            "3","30","10-16","0,01"
         ];
     }
 }
