@@ -7,7 +7,7 @@ import {ContactsComponent} from "./rootComponents/contacts.component";
     selector: 'app',
     templateUrl: 'app/html/rootFiles/app.component.html',
     directives: [ROUTER_DIRECTIVES],
-    stylesUrls: ['app/styles/app.component.css'],
+    styleUrls: ['app/styles/app.component.css'],
     precompile: [RootPageComponent, ContactsComponent]
 })
 

@@ -1,0 +1,9 @@
+#navbar-header-title{
+    color: whitesmoke;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.navbar{
+    box-shadow: 5px 5px 20px rgba(0,0,0,.2);
+}
