@@ -1,5 +1,33 @@
 <div>
-    <div class="container">
-        <h1 *ngFor="let data of products ">{{data}}</h1>
+    <div class="panel-group" id="accordion">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" (click)="toggleIcon()">
+                        <span class="glyphicon glyphicon-file"></span> Описание раздела (Нажмите для просмотра) <span id="accordion-icon" class="glyphicon glyphicon-arrow-down"></span>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p style="width: 70%;margin-top: 3%;">КОНСТРУКЦИОННЫЕ ПЛАСТИКИ – категория технических пластмасс промышленного применения, ориентированная на изготовление деталей машин, механизмов, приборов, электротехнических изделий и т.д. К ним относится Фторопласт, Полиамид (капролон), Полиэтилентерефталат, Полиоксиметилен, Текстолит, Поликарбонат.</p>
+                    <img src="http://aplast.com.ua/images/t82u8l8s.png" style="float: right;margin-top: -22%;">
+                </div>
+            </div>
+        </div>
     </div>
-</div>
+
+    <div class="container">
+            <div class="col-md-4" *ngFor="let product of products; let i=index" style="margin-top: 1%;margin-bottom: 1%;">
+                <div class="product">
+                    <a [routerLink]=" [ '/engineering-plastic/' + product.page ] "><img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="{{product.titlePhoto}}" style="margin-left: 25% ;width: 140px; height: 140px; cursor: pointer;"></a>
+                    <h3 style="margin-left: 20%;"><strong>{{product.title}}</strong></h3>
+                    <h4 style="color: #5bc0de;"><span class="glyphicon glyphicon-credit-card"></span>  {{product.price}}</h4>
+                    <p style="font-size: 14px;"><span class="glyphicon glyphicon-info-sign" ></span> {{product.desc}} ...</p>
+                    <p><a class="btn btn-primary" role="button" style="background: black;box-shadow: 0px 3px 5px rgba(0,0,0,.2)" [routerLink]=" [ '/engineering-plastic/' + product.page ] "><span class="glyphicon glyphicon-comment"></span> Подробнее »</a></p>
+                  </div>
+              </div>
+    </div>
+
+          <hr>
+  </div>
