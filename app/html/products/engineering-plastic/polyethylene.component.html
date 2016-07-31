@@ -1,0 +1,343 @@
+<div class="jumbotron">
+    <div class="container">
+        <div class="bs-example bs-example-tabs">
+            <ul id="myTab" class="nav nav-tabs">
+                <li class="active"><a href="#list" data-toggle="tab" style="font-weight: bold">Лист<span style="padding-left: 20px;" class="glyphicon glyphicon-hdd"></span> </a></li>
+                <li><a href="#plate" data-toggle="tab" style="font-weight: bold">Плита<span style="padding-left: 20px;" class="glyphicon glyphicon-hdd"></span> </a></li>
+                <li><a href="#prutok" data-toggle="tab" style="font-weight: bold">Пруток<span style="padding-left: 20px;" class="glyphicon glyphicon-minus"></span> </a></li>
+            </ul>
+            <div id="myTabContent" class="tab-content">
+                <div class="tab-pane fade active in" id="list">
+                    <div class="panel panel-default">
+                        <!-- Default panel contents -->
+                        <div class="panel-heading">
+                            <h4><strong>Полиэтилен лист</strong></h4>
+                        </div>
+
+                        <!-- Table -->
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th>Наименование товара</th>
+                                <th>Розничная цена</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr *ngFor="let row of tableSheet">
+                                <td  class="noBoldFontWeight">{{row.title}}</td>
+                                <td>{{row.price}}</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="plate">
+                    <div class="panel panel-default">
+                        <!-- Default panel contents -->
+                        <div class="panel-heading">
+                            <h4><strong>Фторопласт пруток</strong></h4>
+                        </div>
+
+
+                        <!-- Table -->
+                        <div class="table-responsive">
+                            <table class="table table-striped table-responsive">
+                                <thead>
+                                <tr>
+                                    <th>Наименование товара</th>
+                                    <th>Цена, грн/плит.</th>
+                                    <th>Вес, кг/плит.р</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr *ngFor="let row of tablePlate">
+                                    <td  class="noBoldFontWeight">{{row.title}}</td>
+                                    <td>{{row.price}}</td>
+                                    <td>{{row.weight}}</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="prutok">
+                    <div class="panel panel-default">
+                        <!-- Default panel contents -->
+                        <div class="panel-heading">
+                            <h4><strong>Фторопласт пруток</strong></h4>
+                        </div>
+
+
+                        <!-- Table -->
+                        <div class="table-responsive">
+                            <table class="table table-striped table-responsive">
+                                <thead>
+                                <tr>
+                                    <th>Наименование товара</th>
+                                    <th>Цена, грн/кг</th>
+                                    <th>Вес, кг/метр</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr *ngFor="let row of tableBar">
+                                    <td  class="noBoldFontWeight">{{row.title}}</td>
+                                    <td>{{row.price}}</td>
+                                    <td>{{row.weight}}</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="bs-callout bs-callout-info">
+            <h4><strong>PE300 – Полиэтилен</strong></h4>
+            <p>Молекулярная масса 300.000. Данный полиэтилен подобен PE500 с более высокой жесткостью и более низкой стойкостью в
+                отношении постоянных ударов. Применение этого полиэтилена подобно использованию PE500, как правило, чаще используется,
+                когда требуется слегка более жесткий материал.</p>
+        </div>
+        <div class="bs-callout bs-callout-info">
+            <h4><strong>СВОЙСТВА</strong></h4>
+            <p>Использование в химии: высокая стойкость к химическому воздействию, типичная для полиолефинов. Хорошая ударопрочность
+                даже при низких температурах. Хорошее сопротивление истиранию. Низкий коэффициент трения. Низкая удельная масса.
+                Легкая обрабатываемость материала. Цвет: натуральный.</p>
+        </div>
+
+        <div class="bs-callout bs-callout-info">
+            <h4><strong>НЕДОСТАТКИ</strong></h4>
+            <p>В сравнении с другими конструкционными пластмассами, данный материал обладает низкими термическими и механическими
+                свойствами: растягивающее напряжение, прочность на изгиб и на сжатие и т.д. В сравнении с высокой молекулярной
+                массой, данный материал более жесткий и поэтому менее прочный при постоянной ударной нагрузке.</p>
+        </div>
+
+        <div class="bs-callout bs-callout-info">
+            <h4><strong>ПРИМЕНЕНИЕ</strong></h4>
+            <p>Использование в контакте с пищевыми продуктами: физиологически инертный, данный продукт одобрен для использования
+                при контакте с пищевыми продуктами наиболее влиятельными организациями по контролю качества и стандартов.
+                Благодаря этому свойству, данный материал широко используется для комплектующих в оборудовании для пищевой
+                промышленности, насосов для жидких пищевых продуктов и т.д.</p>
+            <p>Использование в химии: благодаря высокой стойкости к воздействию кислот и щелочей, данный материал используется для комплектующих в
+                химической промышленности.</p>
+            <p>Использование в электротехнике: очень хорошие диэлектрические свойства, стойкость к атмосферным воздействиям. </p>
+            <p>Использование в механике: низкий коэффициент трения и не гигроскопичность делают этот материал подходящим для использования для подшипников
+                или механических деталей с низкими нагрузками, даже при работе в воде.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading">
+                <h4><strong>Свойства</strong></h4>
+            </div>
+
+
+            <!-- Table -->
+            <div class="table-responsive">
+                <table class="table table-striped table-responsive">
+                    <thead>
+                    <tr>
+                        <th>Плотность (г/см3 )</th>
+                        <th>Абсорбция 	Воды в воздухе 50% о.в.(%)</th>
+                        <th>Абсорбция 	23ºС в насыщенном водном растворе(%)</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>0,95</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading">
+                <h4><strong>Механические свойства</strong></h4>
+            </div>
+
+
+            <!-- Table -->
+            <div class="table-responsive">
+                <table class="table table-striped table-responsive">
+                    <thead>
+                    <tr>
+                        <th *ngFor="let title of mechanicalTitle">{{title}}</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td *ngFor="let data of mechanicalData">{{data}}</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading">
+                <h4><strong>Термосвойства</strong></h4>
+            </div>
+
+
+            <!-- Table -->
+            <div class="table-responsive">
+                <table class="table table-striped table-responsive">
+                    <thead>
+                    <tr>
+                        <th *ngFor="let title of thermalTitle">{{title}}</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td *ngFor="let data of thermalData">{{data}}</td>
+                    </tr>
+                    </tbody>
+
+                    <thead>
+                    <tr>
+                        <th>Рабочая температура короткого периода – без нагрузки (ºС)</th>
+                        <th>Минимальная рабочая температура (ºС)</th>
+                        <th>Воспламеняемость UL 94 (толщина 3-6 мм) (%)</th>
+                        <th>Кислородный индекс</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>95</td>
+                        <td>-30	</td>
+                        <td>HB</td>
+                        <td>18</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading">
+                <h4><strong>Электрические свойства</strong></h4>
+            </div>
+
+
+            <!-- Table -->
+            <div class="table-responsive">
+                <table class="table table-striped table-responsive">
+                    <thead>
+                    <tr>
+                        <th>Диэлектрическая константа при 1МГц	(кВ/мм)</th>
+                        <th>Электрическая прочность диэлектрика (Ом/см)</th>
+                        <th>Объемное удельное сопротивление</th>
+                        <th>Коэффициент рассеяния тангенс потерь при 1 МГц</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>2,3</td>
+                        <td>50</td>
+                        <td>1017</td>
+                        <td>0,004</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="bs-callout bs-callout-info">
+          <p><strong>Полиэтилен ПЕ 500 </strong>- средняя молекулярная масса 500000 г/моль. В этой марке сочетается жесткость,
+            амортизирующая способность, прочность к износу и истиранию, легко сваривается. Используется в пищевой (мясной и рыбной)
+            промышленности, пригоден для всевозможных механических, химических, электрических процессов.
+          </p>
+        </div>
+
+        <div class="bs-callout bs-callout-info">
+            <p><strong>Полиэтилен ПЕ 1000</strong> - средняя молекулярная масса 4500000 г/моль. Лучшее сочетание свойств из всех марок
+                полиэтилена сверхвысокой плотности. При отличной износостойкости высокая ударная прочность даже при температурах
+                ниже -200°С. Применяется в конструкциях общего назначения, затарочных и упаковочных машинах, химической
+                промышленности и гальванопокрытиях, криогенной технике, текстильной промышленности и емкостях для сыпучих материалов.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading">
+                <h4><strong>Термосвойства</strong></h4>
+            </div>
+
+
+            <!-- Table -->
+            <div class="table-responsive">
+                <table class="table table-striped table-responsive">
+                    <thead>
+                    <tr>
+                        <th *ngFor="let title of thermalTitle1">{{title}}</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr *ngFor="let data of thermalData1">
+                        <td>{{data.proper}}</td>
+                        <td>{{data.value}}</td>
+                        <td>{{data.method}}</td>
+                        <td>{{data._1000}}</td>
+                        <td>{{data._500}}</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="bs-callout bs-callout-info">
+            <p>Полиэтилен (ПЕ 300, ПЕ 500, ПЕ 1000 ) в листах, рутках и плитах устойчив к воде, горюче-смазочным материалам,
+                спиртосодержащим продуктам, минеральным и органическим маслам. Не реагирует при контакте с кислотами, щелочами,
+                растворами солей, не растворим в органических растворителях.
+            </p>
+            <p>Листы и плиты из полиэтилена отличаются высокой стойкостью к растрескиванию.</p>
+            <p>ПЕ имеет хорошую ударопрочность при минусовых температурах.</p>
+            <p>Лист и плита из полиэтилена очень просто обрабатывается, не давая сколов и расщепов.</p>
+            <p>Лист и плита из ПЕ пилится ручной ножовкой, электропилой по дереву, циркулярной пилой. </p>
+            <p>Из листа полиэтилена выпиливается любой, даже очень сложный, контур ручным или электролобзиком, возможна лазерная резка.</p>
+        </div>
+
+        <div class="bs-callout bs-callout-info">
+            <p>Полиэтилен ПЕ 500и ПЕ 1000 сверлится сверлом любого диаметра, на любую глубину, строгается вручную или электрорубанком,
+                режется ножом, сваривается промышленным феном, ручным экструдером или на стыковой машине, изгибается упруго (без нагрева)
+                или сохраняет приданную форму при нагревании.
+            </p>
+        </div>
+
+        <div class="bs-callout bs-callout-info">
+            <p>Полиэтилен (ПЕ 300, ПЕ 500, ПЕ 1000) в виде стержня, листа, плиты применяется во многих траслях промышленности:
+                химическая промышленность (емкостное оборудование, вентиляционные системы, системы водоочистки), машиностроение,
+                автомобилестроение (емкости, аппараты, оборудование), водоочистка и водоподготовка (емкости, отстойнике, резервуары),
+                очистные сооружения, горная и угледобывающая отрасль (бункеры, дешламаторы, футеровка технологического оборудования),
+                строительство (емкости, съемная опалубка), кораблестроение, изготовление мебели, энергетика, бытовое назначение
+                (емкости, бассейны, понтоны, септики).
+            </p>
+        </div>
+    </div>
+
+</div>

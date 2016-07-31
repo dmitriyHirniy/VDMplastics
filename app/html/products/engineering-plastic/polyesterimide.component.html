@@ -1,0 +1,43 @@
+<div class="jumbotron">
+    <div class="container">
+        <div class="bs-callout bs-callout-info">
+            <h4><strong>Полиэфиримид</strong></h4>
+            <p>
+                1000-производится из полиэфиримидной смолы и характеризуется комбинацией термических,
+                механических и электрических свойств одновременно с низкой воспламеняемостью. Этот материал для
+                областей применения, где одновременно требуется высокая стойкость к теплу и хорошие механические
+                свойства при повышенных температурах (max.t = 210°С, рабочая t = 170°C). Область применения.
+            </p>
+            <p>Детали изготовленные из этих материалов используются в электротехнической промышленности (катушки,
+            кожухи, изоляционные вкладыши), в оборудовании (доильные машины, насосы, клапана, пластины фильтрации и теплообменников)
+            , в пищевой и медицинской промышленности (детали подвергающиеся частым промывкам и стерилизации)
+            </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="panel panel-default">
+            <!-- Default panel contents -->
+
+            <!-- Table -->
+            <table class="table table-striped">
+                <caption>
+                    <h4><strong>СВОЙСТВА ПОЛИЭФИРИМИДА И ПОЛИСУЛЬФОНА</strong></h4>
+                </caption>
+                <thead>
+                <tr>
+                    <th *ngFor="let title of properties.theadTitle">{{title}}</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr *ngFor="let data of properties.tbodyData">
+                    <td>{{data.proper}}</td>
+                    <td>{{data.unit}}</td>
+                    <td>{{data.pei}}</td>
+                    <td>{{data.psu}}</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,154 @@
+<div class="jumbotron">
+    <div class="container">
+        <div class="panel panel-default">
+            <!-- Default panel contents -->
+
+            <!-- Table -->
+            <table class="table table-striped">
+                <caption>
+                    <h4><strong>Поликарбонат пруток</strong></h4>
+                </caption>
+                <thead>
+                <tr>
+                    <th>Наименование товара</th>
+                    <th>Цена, грн/кг</th>
+                    <th>Вес, кг/метр</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr *ngFor="let data of production">
+                    <td class="noBoldFontWeight">{{data.title}}</td>
+                    <td>{{data.price}}</td>
+                    <td>{{data.weight}}</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="bs-callout bs-callout-info">
+            <h4>PC – Lexan (Поликарбонат)</h4>
+            <p>Поликарбонат. Этот аморфный полимер обычно используется в связи с его высокой ударопрочностью, в том числе при
+                низких температурах. Этот материал не рекомендуется для использования в механике, даже если формоустойчивость
+                делает его подходящим для изготовления точных деталей.</p>
+        </div>
+
+        <div class="bs-callout bs-callout-info">
+            <h4>СВОЙСТВА</h4>
+            <p>Превосходная ударопрочность. Диэлектрические свойства. Стабильность размеров.
+                Цвет: светлый</p>
+        </div>
+
+        <div class="bs-callout bs-callout-info">
+            <h4>НЕДОСТАТКИ</h4>
+            <p>Данный материал не обладает самосмазывающейся способностью, он разрушается под действием масел и консистентных смазок,
+                поэтому он не может считаться подходящим для смазывающихся движущих механических деталей.</p>
+        </div>
+
+        <div class="bs-callout bs-callout-info">
+            <h4>ПРИМЕНЕНИЕ</h4>
+            <p>Использование в электротехнике: хорошие диэлектрические свойства. Он используется главным образом в этой области.
+                Использование в химии: использование PC в химической промышленности не является идеальным вариантом в связи с плохой сопротивляемостью углеводородам. </p>
+            <p>Использование в контакте с пищевыми продуктами: физиологически инертный, если натуральный.</p>
+            <p>Использование в механике: данный материал используется для точных механизмов, когда требуется хорошая стабильность размеров.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="panel panel-default">
+            <!-- Default panel contents -->
+
+            <!-- Table -->
+            <table class="table table-striped">
+                <caption>
+                    <h4><strong>Свойства</strong></h4>
+                </caption>
+                <thead>
+                <tr>
+                    <th>Плотность (г/см3 )</th>
+                    <th>Абсорбция Воды в воздухе 50% о.в.(%)</th>
+                    <th>Абсорбция 23ºС в насыщенном водном растворе(%)</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1.2</td>
+                    <td>0.2</td>
+                    <td>0.4</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="panel panel-default">
+            <!-- Default panel contents -->
+
+            <!-- Table -->
+            <table class="table table-striped">
+                <caption>
+                    <h4><strong>Механические свойства</strong></h4>
+                </caption>
+                <thead>
+                <tr>
+                    <th style="font-size: 15px;" *ngFor="let title of mechanicalPropertiesTitle">{{title}}</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td *ngFor="let data of mechanicalPropertiesData">{{data}}</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="panel panel-default">
+            <!-- Default panel contents -->
+
+            <!-- Table -->
+            <table class="table table-striped">
+                <caption>
+                    <h4><strong>Термосвойства</strong></h4>
+                </caption>
+                <thead>
+                <tr>
+                    <th *ngFor="let title of thermalPropertiesTitle">{{title}}</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td *ngFor="let data of thermalPropertiesData">{{data}}</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="panel panel-default">
+            <!-- Default panel contents -->
+
+            <!-- Table -->
+            <table class="table table-striped">
+                <caption>
+                    <h4><strong>Электрические свойства</strong></h4>
+                </caption>
+                <thead>
+                <tr>
+                    <th *ngFor="let title of electricPropertiesTitle">{{title}}</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td *ngFor="let data of electricPropertiesData">{{data}}</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>

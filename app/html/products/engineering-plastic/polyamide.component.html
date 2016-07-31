@@ -1,0 +1,142 @@
+<div class="jumbotron">
+    <div class="container">
+        <h4><strong>Полиамид прайс-лист</strong></h4>
+        <div class="bs-example bs-example-tabs">
+            <ul id="myTab" class="nav nav-tabs">
+                <li class="active"><a href="#list" data-toggle="tab" style="font-weight: bold">Лист<span style="padding-left: 20px;" class="glyphicon glyphicon-hdd"></span> </a></li>
+                <li><a href="#plate" data-toggle="tab" style="font-weight: bold">Плита<span style="padding-left: 20px;" class="glyphicon glyphicon-hdd"></span> </a></li>
+                <li><a href="#prutok" data-toggle="tab" style="font-weight: bold">Пруток<span style="padding-left: 20px;" class="glyphicon glyphicon-minus"></span> </a></li>
+                <li><a href="#tube" data-toggle="tab" style="font-weight: bold">Труба<span style="padding-left: 20px;" class="glyphicon glyphicon-adjust"></span> </a></li>
+            </ul>
+            <div id="myTabContent" class="tab-content">
+                <div class="tab-pane fade active in" id="list">
+                    <div class="panel panel-info">
+                        <!-- Default panel contents -->
+                        <div class="panel-heading">
+                            <h4><strong>Полиамид лист</strong></h4>
+                        </div>
+
+                        <!-- Table -->
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th>Наименование товара</th>
+                                <th>Цена, грг/лист</th>
+                                <th>Вес, кг/лист</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr *ngFor="let row of priceTableSheet">
+                                <td  class="noBoldFontWeight">{{row.title}}</td>
+                                <td>{{row.price}}</td>
+                                <td>{{row.weight}}</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="bs-callout bs-callout-info">
+                        <h4><strong>Возможна продажа листа 1000х1000мм</strong></h4>
+                        <p>Капролон (другое наименования — полиамид блочный) представляет собой прочный и ударостойкий материал.
+                            Капролон не имеет запаха, капролон заменяет бронзу, другие цветные металлы, сплавы цветных металлов.</p>
+                        <p>Капролон представлен на рынке в  листах и стержнях.</p>
+                        <p>Из листового и стержневого капролона производят втулки, клапаны, шестерни, кольца, шкивы, подшипники скольжения, фланцы.</p>
+                        <p>Детали из капролона отлично поглощают ударные нагрузки, долговечны, имеют низкий коэффициент трения, и могут работать без смазки
+                            в узлах трения.</p>
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="plate">
+                   <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <h4><strong>Полиацеталь плита</strong></h4>
+                        </div>
+
+                        <div class="table-responsive">
+                            <table class="table table-striped table-responsive">
+                                <thead>
+                                <tr>
+                                    <th>Наименование товара</th>
+                                    <th>Цена, грн/кг</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr *ngFor="let row of priceTablePlate">
+                                    <td  class="noBoldFontWeight">{{row.title}}</td>
+                                    <td>{{row.price}}</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="prutok">
+                   <div class="panel panel-info">
+                         <div class="panel-heading">
+                            <h4><strong>Полиацеталь пруток</strong></h4>
+                        </div>
+
+                        <div class="table-responsive">
+                            <table class="table table-striped table-responsive">
+                                <thead>
+                                <tr>
+                                    <th>Наименование товара</th>
+                                    <th>Цена, грн/кг</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr *ngFor="let row of priceTableBar">
+                                    <td  class="noBoldFontWeight">{{row.title}}</td>
+                                    <td>{{row.price}}</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="tube">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <h4><strong>Полиацеталь труба</strong></h4>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-striped table-responsive">
+                                <thead>
+                                <tr>
+                                    <th>Наименование товара</th>
+                                    <th>Розничная цена</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr *ngFor="let row of priceTableTube">
+                                    <td  class="noBoldFontWeight">{{row.title}}</td>
+                                    <td>{{row.price}}</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="bs-callout bs-callout-info">
+            <h4><strong>Капролон В</strong></h4>
+            <p>(Полиамид 6 блочный) существует на протяжении многих лет. Усовершенствование технологии выпускаемого капролона В
+                (Полиамида 6 блочного) позволило улучшить его качество, в том числе снизить внутреннее напряжение.</p>
+            <p>Капролон - полимерный материал конструкционного и антифрикционного назначения. Капролон применяется во многих отраслях
+                промышленности: машиностроение, станкостроении, металлургии, пищевой, обувной и др.</p>
+            <p>Из капролона методом обработки на станках изготавливают широкий спектр деталей, как в новых образцах оборудования, так и в ремонтных целях.
+                Капролон особенно целесообразно применять для замены в узлах вращения подшипников скольжения из бронзы, а также в других узлах трения.</p>
+            <p>Из капролона изготавливают: V-шкивы для грузоподъемных механизмов, колеса и ролики для гидравлических тележек, транспортеров, конвейеров.
+            </p>
+            <p> - шестерни, звездочки, толкатели, червячные колеса для автоматических линий розлива и укупорки различных жидкостей в стеклянную тару;</p>
+            <p> - шнеки, диски и ножи для подачи пищевого сырья в мясопереработке, на кондитерской фабрике.</p>
+        </div>
+    </div>
+
+</div>

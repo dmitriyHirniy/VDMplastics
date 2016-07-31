@@ -1,0 +1,126 @@
+<div class="jumbotron">
+    <div class="container">
+        <div class="bs-example bs-example-tabs">
+            <ul id="myTab" class="nav nav-tabs">
+                <li class="active"><a href="#list" data-toggle="tab" style="font-weight: bold">Лист<span style="padding-left: 20px;" class="glyphicon glyphicon-hdd"></span> </a></li>
+                <li><a href="#prutok" data-toggle="tab" style="font-weight: bold">Пруток<span style="padding-left: 20px;" class="glyphicon glyphicon-minus"></span> </a></li>
+            </ul>
+            <div id="myTabContent" class="tab-content">
+                <div class="tab-pane fade active in" id="list">
+                    <div class="panel panel-default">
+                        <!-- Default panel contents -->
+                        <div class="panel-heading">
+                            <h4><strong>Фторопласт лист</strong></h4>
+                        </div>
+
+                        <!-- Table -->
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th>Наименование товара</th>
+                                <th>Цена, грг/кг</th>
+                                <th>Вес, кг/лист</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr *ngFor="let row of tablePlate">
+                                <td  class="noBoldFontWeight">{{row.title}}</td>
+                                <td>{{row.price}}</td>
+                                <td>{{row.weight}}</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="prutok">
+                    <div class="panel panel-default">
+                        <!-- Default panel contents -->
+                        <div class="panel-heading">
+                            <h4><strong>Фторопласт пруток</strong></h4>
+                        </div>
+
+
+                        <!-- Table -->
+                        <div class="table-responsive">
+                            <table class="table table-striped table-responsive">
+                                <thead>
+                                <tr>
+                                    <th>Наименование товара</th>
+                                    <th>Цена, грн/кг</th>
+                                    <th>Вес, кг/метр</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr *ngFor="let row of tableBar">
+                                    <td  class="noBoldFontWeight">{{row.title}}</td>
+                                    <td>{{row.price}}</td>
+                                    <td>{{row.weight}}</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+
+    <div class="container">
+
+        <div class="bs-callout bs-callout-info">
+            <p>P.T.F.E. (Фторопласт Ф-4)- один из лучших высокополимеров и наиболее распространенный материал из всех
+                фторсодержащих полимеров. Он наиболее стойкий из всех известных пластмасс ко всем минеральным и
+                органическим кислотам, щелочам, органическим растворителям, окислителям, газам и другим агрессивным
+                средам. Вода не смачивает фторопласт и не оказывает никакого воздействия на него. Может подвергаться
+                непрерывной эксплуатации до +250°С. P.T.F.E обладает исключительно низким коэффициентом трения, величина
+                которого не зависит от температуры. Так же является одним из лучших диэлектриков и имеет исключительно
+                высокую стойкость к вольтовой дуге.</p>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading">
+                <h4><strong>СВОЙСТВА ПОЛИТЕТРАФТОРЭТИЛЕНА</strong></h4>
+            </div>
+
+            <!-- Table -->
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th *ngFor="let title of titles">{{title}}</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr *ngFor="let row of table">
+                    <td>{{row.proper}}</td>
+                    <td>{{row._1}}</td>
+                    <td>{{row._2}}</td>
+                    <td>{{row._3}}</td>
+                    <td>{{row._4}}</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="container">
+
+    <div class="bs-callout bs-callout-info">
+        <p>Фторопласт (тефлон) обладает низким, почти не зависящим от температуры коэффициентом трения,
+            совершенно гидрофобен, физиологически инертен.</p>
+        <p>Фторопласт (тефлон) – это высокопрочный современный материал, активно использующийся в различных
+            областях промышленности Украины.</p>
+        <p>Фторопласт-4 (тефлон) - высокомолекулярный кристаллизованный полимер - уникальный материал, обладающий такими
+            ценными свойствами как высокая химическая стойкостьи теплостойкость, хорошие антифрикционные и диэлектрические
+            свойства. Выпускается в виде стержня, листа, плиты.</p>
+    </div>
+
+</div>
+
+</div>

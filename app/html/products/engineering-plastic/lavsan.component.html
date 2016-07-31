@@ -1,0 +1,195 @@
+<div class="jumbotron">
+    <div class="container">
+        <div class="bs-example bs-example-tabs">
+            <ul id="myTab" class="nav nav-tabs">
+                <li class="active"><a href="#home" data-toggle="tab" style="font-weight: bold">Плита<span style="padding-left: 20px;" class="glyphicon glyphicon-hdd"></span> </a></li>
+                <li class=""><a href="#profile" data-toggle="tab" style="font-weight: bold">Пруток<span style="padding-left: 20px;" class="glyphicon glyphicon-minus"></span> </a></li>
+            </ul>
+            <div id="myTabContent" class="tab-content">
+                <div class="tab-pane fade active in" id="home">
+                    <div class="panel panel-default">
+                        <!-- Default panel contents -->
+                        <div class="panel-heading">
+                            <h4><strong>Лавсан плита</strong></h4>
+                        </div>
+                        <div class="panel-body">
+                            <p> Возможна продажа плит размером 500х1000мм</p>
+                        </div>
+
+                        <!-- Table -->
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th>Наименование товара</th>
+                                <th>Цена, грн/плита</th>
+                                <th>Вес, кг/плита</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr *ngFor="let row of tablePlate">
+                                <td>{{row.title}}</td>
+                                <td>{{row.price}}</td>
+                                <td>{{row.weight}}</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="profile">
+                    <div class="panel panel-default">
+                        <!-- Default panel contents -->
+                        <div class="panel-heading">
+                            <h4><strong>Лавсан пруток</strong></h4>
+                        </div>
+
+
+                        <!-- Table -->
+                        <div class="table-responsive">
+                        <table class="table table-striped table-responsive">
+                            <thead>
+                            <tr>
+                                <th>Наименование товара</th>
+                                <th>Цена, грн/плита</th>
+                                <th>Вес, кг/плита</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr *ngFor="let row of tableRods">
+                                <td>{{row.title}}</td>
+                                <td>{{row.price}}</td>
+                                <td>{{row.weight}}</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        </div>
+                    </div>
+
+                    <div class="bs-callout bs-callout-info">
+                        <p>Полиэтилентерефталат (лавсан) в плитах и стержнях обладает высокой механической прочностью и ударостойкостью, устойчивостью к истиранию и многократным деформациям при растяжении и изгибе и сохраняет свои высокие ударостойкие и прочностные характеристики в рабочем диапазоне температур от –40 °С до +60 °С.ПЭТ – хороший диэлектрик, электрические свойства полиэтилентерефталата при температурах до 180°С даже в присутствии влаги изменяются незначительно.ПЭТ (Полиэтилентерефталат) в листах и стержнях обладает высокой химической стойкостью к кислотам, щелочам, солям, спиртам, парафинам, минеральным маслам, бензину, жирам, эфиру. Имеет повышенную устойчивость к действию водяного пара.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <div class="bs-callout bs-callout-info">
+            <h4>PET – Арнит (ERTALYTE)</h4>
+            <p>Арнит (полиэтилентерефталат) – это относительно новый полукристаллический полимер, разработанный для технического применения. Он подходит для изготовления из него механических деталей, которые требуют стабильности размеров (формоустойчивости) и низкого коэффициента трения.</p>
+        </div>
+
+        <div class="bs-callout bs-callout-info">
+            <h4>СВОЙСТВА</h4>
+            <p>Низкий коэффициент трения – Стабильность размеров при воздействии температуры и влажности – Прочность на сжатие даже при низких температурах – Превосходная обрабатываемость – Высокая усталостная прочность – Цвет: натуральный</p>
+        </div>
+
+        <div class="bs-callout bs-callout-info">
+            <h4>НЕДОСТАТКИ</h4>
+            <p>Данный материал очень плотный, поэтому он не обладает высокой ударопрочностью. Возможна его модификация при добавлении других полимеров, но эта операция может быть осуществлена в ущерб таким характеристикам, как плотность, прочность на сжатие и изгиб, которые являются характерными для ПЕТ.</p>
+        </div>
+
+        <div class="bs-callout bs-callout-info">
+            <h4>ПРИМЕНЕНИЕ</h4>
+            <p>Использование в механике: благодаря низкому коэффициенту трения данный материал особенно подходит для ползунов, направляющих, подшипников и т.д. Благодаря стабильности размеров он представляет собой превосходный выбор для высокоточных деталей, в которых параметры плотности должны соблюдаться в условиях повышенной влажности и температуры. Использование в контакте с пищевыми продуктами: данный материал является физиологически инертным и широко используемым в пищевой промышленности.
+                использование в электротехнике: превосходные электрические свойства (стабильность при продолжительном периоде работы) делают ПЕТ подходящим для производства изоляторов и других электрических деталей.
+                Использование в химии: хорошая стойкость к кислотам и хлорсодержащим растворам.</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="panel panel-default">
+            <!-- Default panel contents -->
+
+            <!-- Table -->
+            <div class="table-responsive">
+                <table class="table table-striped table-responsive">
+                    <caption>Механические свойства</caption>
+                    <thead>
+                    <tr>
+                       <th *ngFor="let title of mechanicalPropertiesTitle">{{title}}</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>(Н/мм2)</td>
+                        <td>(%)</td>
+                        <td>(Н/мм2)</td>
+                        <td>(Н/мм2)</td>
+                        <td>(КДж/м2 )</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>85</td>
+                        <td>50</td>
+                        <td>3100</td>
+                        <td>20</td>
+                        <td>n.b.</td>
+                        <td>5</td>
+                        <td>170</td>
+                        <td>М95</td>
+                        <td>0,25</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="panel panel-default">
+            <!-- Default panel contents -->
+
+            <!-- Table -->
+                <table class="table table-striped">
+                    <caption>Термосвойства
+
+                    </caption>
+                    <thead>
+                    <tr>
+                        <th *ngFor="let title of thermalProperties.theadTitle">{{title}}</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td *ngFor="let data of thermalProperties.tbodyData">{{data}}</td>
+                    </tr>
+                    </tbody>
+                    <thead>
+                    <tr>
+                        <th *ngFor="let title of thermalPropertiesTable2.theadTitle">{{title}}</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td *ngFor="let data of thermalPropertiesTable2.tbodyData">{{data}}</td>
+                    </tr>
+                    </tbody>
+                </table>
+        </div>
+    </div>
+    <div class="container">
+        <div class="panel panel-default">
+            <!-- Default panel contents -->
+
+            <!-- Table -->
+            <table class="table table-striped">
+                <caption>Электрические свойства</caption>
+                <thead>
+                <tr>
+                    <th *ngFor="let title of electricalPropertiesTable.theadTitle">{{title}}</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td *ngFor="let data of electricalPropertiesTable.tbodyData">{{data}}</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>

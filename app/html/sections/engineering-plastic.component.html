@@ -20,11 +20,11 @@
     <div class="container">
             <div class="col-md-4" *ngFor="let product of products; let i=index" style="margin-top: 1%;margin-bottom: 1%;">
                 <div class="product">
-                    <a [routerLink]=" [ '/engineering-plastic/' + product.page ] "><img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="{{product.titlePhoto}}" style="margin-left: 25% ;width: 140px; height: 140px; cursor: pointer;"></a>
+                    <a [routerLink]=" [ '/Engineering-plastic/' + product.page ] "><img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="{{product.titlePhoto}}" style="margin-left: 25% ;width: 140px; height: 140px; cursor: pointer;"></a>
                     <h3 style="margin-left: 20%;"><strong>{{product.title}}</strong></h3>
                     <h4 style="color: #5bc0de;"><span class="glyphicon glyphicon-credit-card"></span>  {{product.price}}</h4>
                     <p style="font-size: 14px;"><span class="glyphicon glyphicon-info-sign" ></span> {{product.desc}} ...</p>
-                    <p style="margin-bottom: 10%;"><a class="btn btn-primary" role="button" style="background: black;box-shadow: 0px 3px 5px rgba(0,0,0,.2)" [routerLink]=" [ '/engineering-plastic/' + product.page ] "><span class="glyphicon glyphicon-comment"></span> Подробнее »</a></p>
+                    <p style="margin-bottom: 10%;"><a class="btn btn-primary" role="button" style="background: black;box-shadow: 0px 3px 5px rgba(0,0,0,.2)" [routerLink]=" [ '/Engineering-plastic/' + product.page ] "><span class="glyphicon glyphicon-comment"></span> Подробнее »</a></p>
                   </div>
             </div>
     </div>

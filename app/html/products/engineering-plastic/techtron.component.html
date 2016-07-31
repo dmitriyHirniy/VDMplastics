@@ -1,0 +1,38 @@
+<div class="jumbotron">
+    <div class="container">
+        <div class="bs-callout bs-callout-info">
+            <h4><strong>Techtron</strong></h4>
+            <p>TECHTRON HPV PPS-является армированным, с внутренней смазкой, полукристаллическим полимером. Обладает комбинацией высоких
+                свойств: сопротивление воспламеняемости, стойкость к сильному радиационному излучению, износостойкостью, высокими
+                допустимыми нагрузками, стабильностью размеров, стойкостью к химическому воздействию в широком диапазоне температур
+                (до 260°С).</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading">
+                <h4><strong>СВОЙСТВА ПОЛИФЕНИЛЕНСУЛЬФИДА</strong></h4>
+            </div>
+
+            <!-- Table -->
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Свойства</th>
+                    <th>Ед.изм</th>
+                    <th>TECHTRON HPV PPS</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr *ngFor="let row of table">
+                    <td>{{row.proper}}</td>
+                    <td>{{row.unit}}</td>
+                    <td>{{row.hpv}}</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
