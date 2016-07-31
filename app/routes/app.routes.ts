@@ -31,6 +31,9 @@ export const routes: RouterConfig = [
             {path: 'PolypropyleneProducts' , children: [
                 {path: '', component: PolypropyleneProductsComponent},
             ]},
+            { path: 'contacts', children: [
+                {path: '', component: ContactsComponent}
+            ] },
             {path: 'Engineering-plastic',
                 children: [
                     {path: '' , component:EngineeringPlasticComponent },
@@ -53,7 +56,6 @@ export const routes: RouterConfig = [
            ],
         useAsDefault: true
     },
-    { path: 'contacts',      component: ContactsComponent },
 ];
 
 

@@ -1,6 +1,16 @@
 import {Component, OnInit} from "@angular/core";
 import { ROUTER_DIRECTIVES } from '@angular/router';
 
+class Section{
+    constructor(
+        public photo: string,
+        public title: string,
+        public priceFrom: string,
+        public description: string,
+        public pageLink: string
+    ){};
+}
+
 @Component({
     selector: 'root-page-component',
     templateUrl: 'app/html/rootFiles/rootPage.component.html',
@@ -12,7 +22,31 @@ export class RootPageComponent implements OnInit{
     
     public rootLinks: string[];
     
+    public sections: Section[];
+    
     public ngOnInit(){
+        
+        this.sections = [
+            new Section(
+                "app/images/rootPage/1.png", 
+                "Конструкционный пластик",
+                "От 43.34 грн.",
+                "Конструкционный пластик - категория технических пластмасс промышленного применения, ориен -тированная на",
+                "/Engineering-plastic"),
+            new Section(
+                "app/images/rootPage/2.jpg",
+                "Пневматика",
+                "От 300 грн.",
+                "В наличии на складе пневмоцилиндры, блоки подготовки воздуха, соленоидные клапаны, фитинги и комплектующие.",
+                "/Pneumatics"),
+            new Section(
+                "app/images/rootPage/3.jpg",
+                "Изделия из полипропилена",
+                "Уточнайте",
+                "Полипропиленовые емкости используются в агропромышленном комплексе, производственной, хозяйственной отрасли",
+                "/PolypropyleneProducts")
+        ];
+        
         //Slider deploying
         $(document).ready(function() {
             $(".slider").each(function () { // обрабатываем каждый слайдер
@@ -46,6 +80,8 @@ export class RootPageComponent implements OnInit{
             "menu-product",
             "menu-contacts"
         ];
+        
+        
     }
     
     public rootPageLinksClicked( currentId: string ){

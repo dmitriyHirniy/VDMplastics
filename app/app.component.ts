@@ -2,13 +2,14 @@ import {Component, OnInit} from "@angular/core";
 import { ROUTER_DIRECTIVES } from '@angular/router';
 import {RootPageComponent} from "./rootComponents/mainPage.component";
 import {ContactsComponent} from "./rootComponents/contacts.component";
+import {EngineeringPlasticComponent} from "./sections/engineeringPlastic.component";
 
 @Component({
     selector: 'app',
     templateUrl: 'app/html/rootFiles/app.component.html',
     directives: [ROUTER_DIRECTIVES],
     styleUrls: ['app/styles/app.component.css'],
-    precompile: [RootPageComponent, ContactsComponent]
+    precompile: [RootPageComponent, ContactsComponent, EngineeringPlasticComponent]
 })
 
 export class AppComponent implements OnInit{
