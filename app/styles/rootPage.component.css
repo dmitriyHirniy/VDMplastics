@@ -47,3 +47,11 @@
 .slider .nav span.on {
     background: #5bc0de;
 }
+#rootPage{
+    margin-top: -10%;
+}
+.img-circle{
+    margin-left: 25%;
+    cursor: pointer;
+    width: 140px; height: 140px;
+}

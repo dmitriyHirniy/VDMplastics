@@ -1,11 +1,17 @@
 import {Component, OnInit} from "@angular/core";
+import { ROUTER_DIRECTIVES } from '@angular/router';
+
 @Component({
     selector: 'root-page-component',
     templateUrl: 'app/html/rootFiles/rootPage.component.html',
+    directives: [ROUTER_DIRECTIVES],
     styleUrls: ['app/styles/rootPage.component.css']
 })
 
 export class RootPageComponent implements OnInit{
+    
+    public rootLinks: string[];
+    
     public ngOnInit(){
         //Slider deploying
         $(document).ready(function() {
@@ -34,5 +40,18 @@ export class RootPageComponent implements OnInit{
             sliderJS(obj, sl); // слайдим
             return false;
         });
+
+        this.rootLinks = [
+            "menu-root",
+            "menu-product",
+            "menu-contacts"
+        ];
+    }
+    
+    public rootPageLinksClicked( currentId: string ){
+        for(let i=0;i<this.rootLinks.length;i++){
+            document.getElementById(this.rootLinks[i]).classList.remove("active");
+        }
+        document.getElementById( currentId ).classList.add("active");
     }
 }

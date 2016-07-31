@@ -1,10 +1,59 @@
-<div class="container">
-    <div class="slider">
-        <ul>
-            <li><img src="/app/images/slider/4.jpg" alt="" width="827" height="290"></li>
-            <li><img src="/app/images/slider/1.jpg" alt="" width="827" height="290"></li>
-            <li><img src="/app/images/slider/2.jpg" alt="" width="827" height="290"></li>
-            <li><img src="/app/images/slider/3.jpg" alt="" width="827" height="290"></li>
-        </ul>
+
+<div id="rootPage">
+
+    <div class="container">
+        <div class="slider">
+            <ul>
+                <li><img src="/app/images/slider/4.jpg" alt="" width="827" height="290"></li>
+                <li><img src="/app/images/slider/1.jpg" alt="" width="827" height="290"></li>
+                <li><img src="/app/images/slider/2.jpg" alt="" width="827" height="290"></li>
+                <li><img src="/app/images/slider/3.jpg" alt="" width="827" height="290"></li>
+            </ul>
+        </div>
     </div>
+
+    <div class="container">
+        <!-- Example row of columns -->
+        <h2 style="margin-left: 33%;padding-bottom:  10px">Наша основная продукция</h2>
+        <div class="row">
+
+            <div class="col-md-4">
+                <a routerLink="['/Engineering-plastic']" (click)="rootPageLinksClicked('menu-product')">
+                    <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="app/images/rootPage/1.png">
+                </a>
+                <h3><strong>Конструкционный пластик</strong>    </h3>
+                <h4 style="color: #5bc0de;cursor: pointer"><span class="glyphicon glyphicon-credit-card"></span> От 43.34 грн.</h4>
+                <hr>
+                <p style="font-size: 14px;"><span class="glyphicon glyphicon-info-sign"></span> Конструкционный пластик - категория технических пластмасс промышленного применения, ориен -тированная на ... </p>
+                <p><a class="btn btn-primary btn-lg" [routerLink]="['/engineering-plastic']" role="button" (click)="rootPageLinksClicked('menu-product')"><span class="glyphicon glyphicon-comment"></span> Подробнее »</a></p>
+            </div>
+
+            <div class="col-md-4" style="border: none">
+                <a routerLink="['/Pneumatics']" (click)="rootPageLinksClicked('menu-product')">
+                    <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="app/images/rootPage/2.jpg">
+                </a>
+                <h3><strong>Пневматика</strong></h3>
+                <h4 style="color: #5bc0de;cursor: pointer"><span class="glyphicon glyphicon-credit-card"></span> От 300 грн.</h4>
+                <hr>
+                <p><span class="glyphicon glyphicon-info-sign"></span> В наличии на складе пневмоцилиндры, блоки подготовки воздуха, соленоидные клапаны, фитинги и комплектующие.</p>
+                <p><a class="btn btn-primary btn-lg" [routerLink]="['/Pneumatics']" role="button" (click)="rootPageLinksClicked('menu-product')"> <span class="glyphicon glyphicon-comment"></span>  Подробнее »</a></p>
+            </div>
+
+            <div class="col-md-4">
+                <a routerLink="['/PolypropyleneProducts']" (click)="rootPageLinksClicked('menu-product')">
+                    <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="app/images/rootPage/3.jpg">
+                </a>
+                <h3><strong>Изделия из полипропилена</strong></h3>
+                <h4 style="color: #5bc0de">От 300 грн.</h4>
+                <hr>
+                <p><span class="glyphicon glyphicon-info-sign"></span> Полипропиленовые емкости используются в агропромышленном комплексе, производственной, хозяйственной отрасли...</p>
+                <p><a class="btn btn-primary btn-lg" [routerLink]="['/PolypropyleneProducts']" role="button" (click)="rootPageLinksClicked('menu-product')"><span class="glyphicon glyphicon-comment"></span>  Подробнее »</a></p>
+            </div>
+        </div>
+        <hr>
+
+        <h4>
+            Телефоны: <strong>+38 (057) 719-77-19  +38 (057) 732-29-41</strong>
+        </h4>
+    </div> <!-- /container -->
 </div>
