@@ -61,4 +61,10 @@ export class EngineeringPlasticComponent implements OnInit{
         */
 
     };
+
+    public toggleIcon(){
+        let _class:string = document.getElementById('accordion-icon').getAttribute('class');
+        if(_class == "glyphicon glyphicon-arrow-down") document.getElementById('accordion-icon').setAttribute('class' , 'glyphicon glyphicon-arrow-up');
+        else document.getElementById('accordion-icon').setAttribute('class' , 'glyphicon glyphicon-arrow-down');
+    };
 }
