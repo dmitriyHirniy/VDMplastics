@@ -1,1 +1,6 @@
 .idea
+boot.js
+node_modules
+typings
+*.js
+*.js.map
