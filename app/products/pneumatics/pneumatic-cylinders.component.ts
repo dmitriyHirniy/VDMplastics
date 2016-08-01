@@ -40,7 +40,7 @@ export class PneumaticCylindersComponent implements OnInit{
                     "Диаметр штока 8, 10, 12, 16, 20 мм",
                     "Длина хода 1-400 мм"
                 ],
-                ""),
+                "CylindersSeriesADVU"),
             new Product(
                 "http://aplast.com.ua/images/pneomo/1_4.1.jpg",
                 "Пневмоцилиндры SC (корпус на шпильках)",
@@ -49,7 +49,7 @@ export class PneumaticCylindersComponent implements OnInit{
                     "Диаметр штока 32, 40, 45 мм",
                     "Длина хода 1...2000 мм"
                 ],
-                ""),
+                "PneumaticMA"),
             new Product(
                 "http://aplast.com.ua/images/pneomo/1.3.jpg",
                 "Пневмоцилиндры MA (mini)",
@@ -58,7 +58,7 @@ export class PneumaticCylindersComponent implements OnInit{
                     "Диаметр штока 6, 8, 10, 12, 16, 20 мм",
                     "Длина хода 1-500 мм"
                 ],
-                "")
+                "CylindersSChousingHeels")
         ];
         
     }
