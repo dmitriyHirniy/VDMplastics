@@ -1,6 +1,7 @@
 <div class="jumbotron">
     <div class="container">
-        <div class="row" style="margin-left: 5px;margin-top: 2%;">
+
+       <!-- <div class="row" style="margin-left: 5px;margin-top: 2%;">
             <div class="col-md-4">
                 <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="http://aplast.com.ua/images/bas/4.jpg" style="width: 140px; height: 140px;">
                 <h3><strong>Басейны</strong> </h3>
@@ -36,6 +37,26 @@
                 <hr>
                 <p style="font-size: 14px;">Листовой полипропилен — экологически чистый, прочный и устойчивый к ультрафиолетовому излучению пластик... </p>
                 <p><a class="btn btn-primary btn-lg" role="button"><span class="glyphicon glyphicon-comment"></span> Подробнее »</a></p>
+            </div>
+        </div>
+
+        -->
+
+        <div class="row">
+            <div class="col-sm-6 col-md-4" *ngFor="let product of products">
+                <div class="thumbnail">
+                    <a [routerLink]="['/Pneumatics/Accessories/'+product.pageLink]">
+                        <img  style="width:300px;height: 200px;" src="{{product.photo}}" alt="..." width="300" height="200">
+                    </a>
+                    <div class="caption">
+                        <h4 style="color: #5bc0de"><strong> {{product.title}} </strong></h4>
+                        <h4 style="color: #5bc0de;cursor: pointer"><span class="glyphicon glyphicon-credit-card"></span> {{product.price}}</h4>
+                        <p><span class="glyphicon glyphicon-info-sign"></span> {{product.description}}</p>
+                        <p><a style="margin-left: 20%;" [routerLink]="['/Pneumatics/Accessories/'+product.pageLink]" class="btn btn-info btn-lg" role="button">
+                            <span class="glyphicon glyphicon-comment"></span> Подробнее »
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
 
