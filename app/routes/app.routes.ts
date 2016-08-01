@@ -24,6 +24,8 @@ import {PneumaticCylindersDNCseriesComponent} from "../products/pneumatics/pneum
 import {CylindersSeriesADVUComponent} from "../products/pneumatics/pneumatic-cylindres/cylindersSeriesADVU.component";
 import {PneumaticMAComponent} from "../products/pneumatics/pneumatic-cylindres/pneumaticMA(mini)";
 import {CylindersSChousingHeelsComponent} from "../products/pneumatics/pneumatic-cylindres/cylindersSChousingHeels.component";
+import {PneumaticDistributorsComponent} from "../products/pneumatics/pneumaticDistributors.component";
+import {PneumoBlocksAirComponent} from "../products/pneumatics/Pneumo-blocksAir.component";
 
 export const routes: RouterConfig = [
     {
@@ -38,7 +40,9 @@ export const routes: RouterConfig = [
                     {path: 'CylindersSeriesADVU', component: CylindersSeriesADVUComponent},
                     {path: 'PneumaticMA', component: PneumaticMAComponent},
                     {path: 'CylindersSChousingHeels', component: CylindersSChousingHeelsComponent}
-                ]}
+                ]},
+                {path: 'PneumaticDistributors', component: PneumaticDistributorsComponent},
+                {path: 'PneumoBlocksAir', component: PneumoBlocksAirComponent}
             ]},
             {path: 'PolypropyleneProducts' , children: [
                 {path: '', component: PolypropyleneProductsComponent},

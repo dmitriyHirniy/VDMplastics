@@ -1,6 +1,3 @@
-/**
- * Created by dima- on 01.08.2016.
- */
 
 import {Component , OnInit} from "@angular/core";
 
