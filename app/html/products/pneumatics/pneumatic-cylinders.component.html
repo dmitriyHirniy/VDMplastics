@@ -1,0 +1,22 @@
+<div class="jumbotron" style="margin-top: 8%">
+
+    <h3><strong><span class="glyphicon glyphicon-resize-full"></span> Пневмоцилиндры</strong></h3>
+
+    <div class="row">
+        <div class="col-sm-6 col-md-4" *ngFor="let product of products">
+            <div class="thumbnail">
+                <a [routerLink]="['/Pneumatics/Pneumatic-cylinders/'+product.pageLink]">
+                    <img  style="width:300px;height: 200px;" src="{{product.photo}}" alt="..." width="300" height="200">
+                </a>
+                <div class="caption">
+                    <h4 style="color: #5bc0de"><strong> {{product.title}} </strong></h4>
+                    <ul>
+                        <li *ngFor="let text of product.desc">{{text}}</li>
+                    </ul>
+                    <p><a [routerLink]="['']" class="btn btn-primary" role="button"> Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

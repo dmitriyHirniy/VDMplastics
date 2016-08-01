@@ -19,6 +19,8 @@ import {Celazole_PBIComponent} from "../products/engineering-plastic/Celazole_PB
 import {LavsanComponent} from "../products/engineering-plastic/lavsan.component";
 import {PneumaticsComponent} from "../sections/pneumatics.component";
 import {PolypropyleneProductsComponent} from "../sections/polypropylene-products.component";
+import {PneumaticCylindersComponent} from "../products/pneumatics/pneumatic-cylinders.component";
+import {PneumaticCylindersDNCseriesComponent} from "../products/pneumatics/pneumatic-cylindres/pneumaticCylindersDNCseries.component";
 
 export const routes: RouterConfig = [
     {
@@ -27,6 +29,10 @@ export const routes: RouterConfig = [
             {path: '', component: RootPageComponent},
             {path: 'Pneumatics', children: [
                 {path: '', component: PneumaticsComponent},
+                {path: 'Pneumatic-cylinders', children: [
+                    {path: '', component: PneumaticCylindersComponent},
+                    {path: 'PneumaticCylindersDNCseries', component: PneumaticCylindersDNCseriesComponent}
+                ]}
             ]},
             {path: 'PolypropyleneProducts' , children: [
                 {path: '', component: PolypropyleneProductsComponent},
