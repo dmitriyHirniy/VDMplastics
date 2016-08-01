@@ -1,0 +1,28 @@
+<div class="jumbotron">
+
+    <h3 style="margin-top: -2%;"><strong><span class="glyphicon glyphicon-resize-full"></span> Комплектующие</strong></h3>
+
+    <div class="container">
+
+        <h4>Принадлежности для штоковых пневмоцилиндров и пневмосистем. Здесь можно подобрать различные варианты крепления и
+            укомплектовать привод или пневмосистему дополнительными модулями.</h4>
+
+        <div class="row">
+            <div class="col-sm-6 col-md-4" *ngFor="let product of products">
+                <div class="thumbnail">
+                    <a [routerLink]="['/Pneumatics/Accessories/'+product.pageLink]">
+                        <img  style="width:300px;height: 200px;" src="{{product.photo}}" alt="..." width="300" height="200">
+                    </a>
+                    <div class="caption">
+                        <h4 style="color: #5bc0de"><strong> {{product.title}} </strong></h4>
+                        <p>{{product.desc}}</p>
+                        <p><a style="margin-left: 20%;" [routerLink]="['/Pneumatics/Accessories/'+product.pageLink]" class="btn btn-info btn-lg" role="button">
+                            <span class="glyphicon glyphicon-comment"></span> Подробнее »
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
