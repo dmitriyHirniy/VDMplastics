@@ -29,6 +29,10 @@ import {PneumoBlocksAirComponent} from "../products/pneumatics/Pneumo-blocksAir.
 import {AccessoriesComponent} from "../products/pneumatics/accessories.component";
 import {FastenersComponent} from "../products/pneumatics/accessories/fasteners.component";
 import {SilencersTubesComponent} from "../products/pneumatics/silencers&tubes.component";
+import {PoolComponent} from "../products/polypropylene-products/pool.component";
+import {GalvanicBathsComponent} from "../products/polypropylene-products/galvanicBaths.component";
+import {GreaseTrapComponent} from "../products/polypropylene-products/greaseTrap.component";
+import {KNSComponent} from "../products/polypropylene-products/KNS.component";
 
 export const routes: RouterConfig = [
     {
@@ -54,6 +58,10 @@ export const routes: RouterConfig = [
             ]},
             {path: 'PolypropyleneProducts' , children: [
                 {path: '', component: PolypropyleneProductsComponent},
+                {path: 'Pool', component: PoolComponent},
+                {path: 'GalvanicBaths', component: GalvanicBathsComponent},
+                {path: 'GreaseTrap', component: GreaseTrapComponent},
+                {path: 'KNS', component: KNSComponent}
             ]},
             { path: 'contacts', children: [
                 {path: '', component: ContactsComponent}
